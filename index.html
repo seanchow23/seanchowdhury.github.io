@@ -7,9 +7,7 @@
     <title>My Single Page Portfolio</title>
    <style>
 	
-    
-    
-    
+      
 	   
     body, html {
         margin: 0;
@@ -25,19 +23,19 @@
         flex-direction: column;
     }
     #home {
-	 min-height: 100vh; 
+		min-height: 100vh; 
       	color: white;
         background-color: #000000;
         justify-content: flex-start; /* Aligns content to the top */
-	text-align: center; /* Text aligned to the left */
+		text-align: center; /* Text aligned to the left */
     }
-     #home h1 {
+     #home p {
     font-size: 70px; /* Adjust as needed */
     margin-top: 50px; /*Adjust as needed */
     margin-left: 250px /*just as needed */
 }
 
- #home p {
+ #home p1 {
    margin-bottom: 150px
 }
 
@@ -61,7 +59,7 @@
         text-align: center; /* Text aligned to the right */
     }
     nav {
-        background-color: #333;
+        background-color: #323;
         position: sticky;
         
         top: 0;
@@ -84,8 +82,8 @@
 
 .intro {
     display: flex;
-    align-items: center; /* Vertically centers the items in the container */
-    gap: 20px; /* Adds some space between the image and the text */
+    align-items: left; /* Vertically centers the items in the container */
+    gap: 10px; /* Adds some space between the image and the text */
 }
 
 
@@ -131,15 +129,17 @@
 
     <nav>
         <a href="#home">Home</a>
-        <a href="#about">Resume</a>
-        <a href="#contact">Contact Me</a>
+        <a href="#about">My Resume</a>
+        <a href="#contact">Contacts</a>
     </nav>
 
     <div id="home" class="section">
-    <h1>Hi I'm Sean</h1>
+                <p>Hi, I'm Sean.</p>
+
     <div class="intro"> <!-- Flex container -->
         <img src="Sean_Chowdhury2 (2).jpg" alt="Sean Chowdhury" class="headshot-image">
-        <p>I'm a sophmore studying computer science at Stonybrook University. I'm proficient in Java, C, Python, HTML, and OCAML. My resume and contact info can be found below.</p>
+
+        <p1>I'm a sophmore studying computer science at Stonybrook University. I'm proficient in Java, C, Python, HTML, and OCAML. My resume and contact info can be found below.</p1>
     </div>
 </div>
 
@@ -154,6 +154,12 @@
     <div id="contact" class="section">
     <h2>Contact Me</h2>
     
+      <div class="contact-link">
+        <a href="mailto:sean.chowdhury@stonybrook.edu">
+            <img src="https://logowik.com/content/uploads/images/gmail-new-icon5198.jpg" alt="Email" style="width:24px; height:24px; vertical-align:middle;">
+            Email 
+        </a>
+    </div>
     
     <div class="contact-link">
      <a href="https://github.com/sechowdhury" target="_blank">
@@ -163,12 +169,7 @@
     </div>
     
     
-    <div class="contact-link">
-        <a href="mailto:sean.chowdhury@stonybrook.edu">
-            <img src="https://logowik.com/content/uploads/images/gmail-new-icon5198.jpg" alt="Email" style="width:24px; height:24px; vertical-align:middle;">
-            Email 
-        </a>
-    </div>
+  
 </div>
 
 
