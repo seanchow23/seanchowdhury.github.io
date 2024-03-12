@@ -29,17 +29,17 @@
         justify-content: flex-start; /* Aligns content to the top */
 		text-align: center; /* Text aligned to the left */
     }
-     #home p {
+  .greeting {
     font-size: 70px; /* Adjust as needed */
-    margin-top: 50px; /*Adjust as needed */
-    margin-left: 250px /*just as needed */
+    margin-top: 150px; /* Increase this value to move the paragraph lower */
+    margin-left: 250px; /* Adjust as needed */
 }
 
- #home p1 {
-   margin-top: 30px
-   font-size: 40px; /* Adjust as needed */
-
+.intro-text {
+    font-size: 20px; /* Your desired font size for the paragraph */
+    /* Additional styling */
 }
+
 
     #about {
         color: white;
@@ -136,14 +136,14 @@ font-size: 20px}
         <a href="#contact">Contacts</a>
     </nav>
 
-    <div id="home" class="section">
-                <p>Hi, I'm Sean.</p>
-
+   <div id="home" class="section">
+    <p class="greeting">Hi, I'm Sean.</p>
     <div class="intro"> <!-- Flex container -->
         <img src="Sean_Chowdhury2 (2).jpg" alt="Sean Chowdhury" class="headshot-image">
-
-        <p1>I'm a sophmore studying computer science at Stonybrook University. I'm proficient in Java, C, Python, HTML, and OCAML. My resume and contact info can be found below.</p1>
+        <p class="intro-text">I'm a sophomore studying computer science at Stonybrook University. I'm proficient in Java, C, Python, HTML, and OCAML. My resume and contact info can be found below.</p>
     </div>
+</div>
+
 </div>
 
     <div id="about" class="section">
