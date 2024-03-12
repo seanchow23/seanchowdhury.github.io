@@ -63,9 +63,21 @@
 	    border-radius: 15px; /* Optional: Rounds the corners of the border */	
 	}
 
+.intro {
+    display: flex;
+    align-items: center; /* Vertically centers the items in the container */
+    gap: 20px; /* Adds some space between the image and the text */
+}
+
+
+.intro p {
+    flex-grow: 1; /* Allows the paragraph to take up the remaining space */
+    margin: 0; /* Optional: Adjusts the margin around the paragraph if necessary */
+}
+
     .headshot-image {
-	    width: 682px;
-	    height: 455px;
+	    width: 582px;
+	    height: 355px;
 	    display: block;
 	    margin: 0 auto; /* Centers the image */
 	    border: 5px white; /* Adds a border around the image */
@@ -103,13 +115,12 @@
     </nav>
 
     <div id="home" class="section">
-        <h1>Hi I'm Sean</h1>
-        
-<img src="Sean_Chowdhury2 (2).jpg" alt="resume" class="headshot-image">
-
-        <p>I'm a sophmore studying computer science at Stonybrook University. I'm proficent in Java, C, Python, HTML, and OCAML. My resume and contact info can be found below </p>
-        
+    <h1>Hi I'm Sean</h1>
+    <div class="intro"> <!-- Flex container -->
+        <img src="Sean_Chowdhury2 (2).jpg" alt="Sean Chowdhury" class="headshot-image">
+        <p>I'm a sophmore studying computer science at Stonybrook University. I'm proficient in Java, C, Python, HTML, and OCAML. My resume and contact info can be found below.</p>
     </div>
+</div>
 
     <div id="about" class="section">
 
