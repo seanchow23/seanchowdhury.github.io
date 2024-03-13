@@ -22,20 +22,25 @@
         display: flex;
         flex-direction: column;
     }
-    #home {
-		min-height: 100vh; 
-      	color: white;
-        background-color: #000000;
-        justify-content: flex-start; /* Aligns content to the top */
-		text-align: center; /* Text aligned to the left */
-    }
+ #home {
+    min-height: 100vh;
+    color: white;
+    background-color: #000000;
+    display: flex; /* Make it a flex container to center the intro */
+    justify-content: flex-start; /* Aligns content to the top */
+    text-align: center; /* Keep text alignment */
+    flex-direction: column; /* Stack children vertically */
+    padding-top: 150px; /* Adjust this value to control how far down the content starts */
+}
+
   .greeting {
     font-size: 70px; /* Adjust as needed */
-    margin-top: 200px; /* Increase this value to move the paragraph lower */
+    margin-top: 100px; /* Increase this value to move the paragraph lower */
     margin-left: 280px; /* Adjust as needed */
 }
 
 .intro-text {
+    margin-top: 210px; /* Increase this value to move the paragraph lower */
 
     font-size: 20px; /* Your desired font size for the paragraph */
     /* Additional styling */
@@ -66,7 +71,7 @@
         position: sticky;
         
         top: 0;
-        padding: 10px 0;
+        padding: 0;
     }
     nav a {
         color: white;
@@ -126,6 +131,9 @@
     width: 24px;
     height: 24px;
 }
+.spacer {
+    height: 20px; /* Or whatever height you need to adjust the space */
+}
 
 </style>
 </head>
@@ -137,13 +145,22 @@
         <a href="#contact">Contacts</a>
     </nav>
 
-   <div id="home" class="section">
-    <p class="greeting">Hi, I'm Sean.</p>
-    <div class="intro"> <!-- Flex container -->
+<div id="home" class="section">
+    <div class="intro">
         <img src="Sean_Chowdhury2 (2).jpg" alt="Sean Chowdhury" class="headshot-image">
-        <p class="intro-text">I'm a sophomore studying computer science at Stonybrook University. I'm proficient in Java, C, Python, HTML, and OCAML. My resume and contact info can be found below.</p>
+        <!-- Text container for vertical layout -->
+        <div class="text-container"> 
+        
+            <p class="greeting">Hi, I'm Sean.</p>
+            
+                <div class="spacer"></div> <!-- Spacer added here -->
+
+            
+            <p class="intro-text">I'm a sophomore studying computer science at Stonybrook University. I'm proficient in Java, C, Python, HTML, and OCAML. My resume and contact info can be found below.</p>
+        </div>
     </div>
 </div>
+
 
 </div>
 
